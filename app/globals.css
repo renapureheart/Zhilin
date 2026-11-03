@@ -52,3 +52,36 @@
 
 .edit-entry{margin-top:18px}.edit-form-actions{display:flex;gap:12px}.edit-form-actions>.secondary{min-width:76px}.edit-form-actions>.save-button{flex:1;width:auto}
 .preview-banner{padding:10px 24px;background:#1d3527;color:#bfd3a8;border-bottom:1px solid #35503a;font-size:13px}
+
+/* The same records appear in the map and in a chronological reading trail. */
+.preview-banner{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.backup-actions{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.backup-actions button,.backup-actions label{display:inline-flex;align-items:center;gap:5px;color:#e2f0cf;border:1px solid #49634b;border-radius:5px;padding:5px 9px;cursor:pointer;white-space:nowrap;font-size:12px}
+.backup-actions label{position:relative;overflow:hidden}
+.backup-actions label input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%}
+.backup-actions .disabled{opacity:.45;pointer-events:none}
+.timeline{max-width:1010px;margin:28px auto 25px;border-left:1px solid #49634b;padding-left:28px}
+.timeline-day{position:relative;margin-bottom:38px}
+.timeline-date{display:flex;align-items:center;gap:12px;margin-bottom:16px;color:#d4e9b9;font-size:15px}
+.timeline-date>span:last-child{font-size:12px;color:#90a791}
+.timeline-dot{position:absolute;left:-34px;width:11px;height:11px;background:#cde5a5;border:2px solid #203a2c;border-radius:50%;box-shadow:0 0 0 3px #11271d}
+.timeline-items{display:grid;gap:14px}
+.timeline-items .entry-card{padding:20px 24px}
+.timeline-items .entry-card h3{margin:10px 0 5px}
+.timeline-items .entry-notes{margin:12px 0 16px}
+.timeline-items .entry-progress:empty,.timeline-items .entry-notes:empty{display:none}
+.card-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.card-actions .secondary{padding:6px 10px;font-size:12px}
+.danger-button{color:#f4b5a7;border-color:#69483e}
+.danger-button:hover{color:#ffd3c9;background:#50322b}
+.link-certainty{display:inline-block;margin-left:10px;font-size:12px;color:#bdd9ab;border:1px solid #4c6447;padding:3px 8px;border-radius:20px;vertical-align:super}
+.connection-card .bridge-names{margin-top:22px}
+.connection-card .bridge-names button{overflow-wrap:anywhere;text-align:left}
+.detail-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.detail-actions .primary,.detail-actions .secondary{margin:0}
+.record-dialog select{min-height:43px;width:100%;border:1px solid #435a45;border-radius:6px;background:#102219;color:#ecf2e5;padding:9px 12px;font-size:14px}
+.record-dialog input[type=date]{min-width:150px;color-scheme:dark}
+.record-dialog select:focus-visible,.record-dialog input:focus-visible,.record-dialog textarea:focus-visible{outline:2px solid #c3de98;outline-offset:2px}
+.link-dialog .form-row{align-items:start}
+.link-dialog .form-row label{min-width:180px}
+@media(max-width:800px){.timeline{padding-left:19px}.timeline-dot{left:-25px}.timeline-items .entry-card{padding:18px}.preview-banner{padding:14px 16px}.backup-actions{width:100%}}
